@@ -130,7 +130,7 @@ DATABASES = {
 
 #Mongo Db configuration
 MONGO_URI = os.getenv("MONGO_URI")
-MONGO_DB_NAME = os.getenv("MONGO_DB_NAME", "wine_app_db")
+MONGO_DB_NAME = os.getenv("MONGO_DB_NAME", "gym_finder_management_db")
 
 ###Uncomment if You Want to use Only DockerContainer and Comment it if using Kubernates
 MONGO_HOST = os.getenv("MONGO_HOST", "mongodb")
