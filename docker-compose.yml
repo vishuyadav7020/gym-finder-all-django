@@ -6,6 +6,8 @@ services:
     image: mongo:7.0
     container_name: gym-finder-mongodb
     restart: unless-stopped
+    ports:
+      - "8085:27017"
     environment:
       MONGO_INITDB_ROOT_USERNAME: admin
       MONGO_INITDB_ROOT_PASSWORD: HeroHonda@211202
