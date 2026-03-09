@@ -50,7 +50,7 @@ services:
     ports:
       - "8086:8086"
     volumes:
-      - ./nginx.conf:/etc/nginx/conf.d/default.conf
+      - ./nginx/default.conf:/etc/nginx/conf.d/default.conf
       - ./staticfiles:/app/staticfiles
       - ./media:/app/media
     depends_on:

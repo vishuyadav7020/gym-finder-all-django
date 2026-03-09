@@ -6,12 +6,12 @@ print("🔥 MONGO FILE LOADED")
 logger = logging.getLogger(__name__)
 
 # Create client
-mongo_uri = getattr(settings, "MONGO_URI", None)
-mongo_host = getattr(settings, "MONGO_HOST", "mongodb")
-mongo_port = getattr(settings, "MONGO_PORT", 27017)
-mongo_user = getattr(settings, "MONGO_USER", None)
-mongo_password = getattr(settings, "MONGO_PASSWORD", None)
-mongo_db_name = getattr(settings, "MONGO_DB_NAME", "gym_finder_management_db")
+mongo_uri = settings.MONGO_URI
+mongo_host = settings.MONGO_HOST
+mongo_port = settings.MONGO_PORT
+mongo_user = settings.MONGO_USER
+mongo_password = settings.MONGO_PASSWORD
+mongo_db_name = settings.MONGO_DB_NAME
 
 if mongo_uri:
     logger.info("✅ Connecting to MongoDB ATLAS")
